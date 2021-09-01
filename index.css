@@ -1,0 +1,16 @@
+.center-modal {
+    display: flex;
+  }
+  
+  .center-modal .modal {
+     position: fixed;
+     width: 80%;
+     margin-top:18ch;
+    -webkit-box-shadow: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    background-color: #64b4f600 !important;
+    
+  }
+  .modal-overlay{
+    background-color: #ffffff !important;
+  }

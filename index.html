@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>INFORME PRIMERA ETAPA - IPEM 298</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h5>IPEM Nº 298 - MAESTRO RODOLFO BUTORI</h5>
+          <h5>INFORME ESCOLAR DE AVANCES</h5>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col s12">
+
+        <div class="row" id="busqueda">
+          <div class="col s12">
+            <blockquote style="border-left-color: #ffab40 !important" class="flow-text" >
+              <span style="color:#ffab40;" >INGRESE EL DNI DEL ESTUDIANTE</span>
+            </blockquote>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="dni" type="number" class="validate" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" min="1111111" max="99999999" minlength="7" maxlength="8" required> 
+            <label for="dni">DNI</label>
+            <span class="helper-text" data-error="Incorrecto, ingrese solo numeros" data-success="Correcto">DNI, SOLO NUMEROS SIN PUNTO</span>
+          </div>
+
+          <div class="col s12">
+            <a class="waves-effect waves-light btn-small light-blue" id="btnBuscar">BUSCAR</a>
+          </div>
+        </div> 
+      
+      </div>
+      <div class="col s12 hide" id="respuesta">
+        <div id="infoEstudiante">
+        <div class="row"> 
+          <div class="col s12 m12">
+            <h4 class="blue-text" id="tituloModalInforme"></h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12" >
+            <input disabled id="nombreEstudianteInforme" type="text" class="validate">
+            <label for="nombreEstudianteInforme">NOMBRE Y APELLIDO</label>
+          </div>
+          <div class="input-field col s12 m6">  
+            <input disabled id="dniEstudianteInforme" type="text" class="validate">
+            <label for="dniEstudianteInforme">DNI</label>
+          </div>
+          <div class="input-field col s12 m6">  
+            <input disabled id="burbujaEstudianteInforme" type="text" class="validate">
+            <label for="burbujaEstudianteInforme">CURSO/TURNO</label>
+          </div>
+        </div>
+      </div>
+      
+      <div id="informe" class="row" style="margin-bottom: 0em; !important">
+        <div class="col s12">
+            <blockquote style="border-left-color: #ffab40 !important" class="flow-text" >
+              <span class="flow-text" style="color:#ffab40;"> Informe aprendizajes</span>
+            </blockquote>
+        </div>
+        
+          <div class="col s12">
+            <table>
+              <thead>
+                <tr>
+                    <th>MATERIA</th>
+                    <th>Apr. 1</th>
+                    <th>Apr. 2</th>
+                    <th>Apr. 3</th>
+                    <th>Apr. 4</th>
+                    <th>Val. Form.</th>
+                    <th>Val. Num.</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="tablaInforme"></tbody>
+              </table>
+            </div>
+          
+      </div> 
+      </div>
+
+    </div>
+    <!-- Modal de mensajes -->
+    <div class="center-modal"> 
+        <div id="modal1" class="modal">
+          <div id="contenido_modal" class="modal-content"> 
+          </div>
+        </div>
+      </div> <!-- Fin Modal de mensajes -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="loader.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
