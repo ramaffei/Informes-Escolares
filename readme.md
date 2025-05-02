@@ -1,6 +1,6 @@
 # 📊 Sistema de Informes Escolares
 
-![Banner](https://img.shields.io/badge/IPEM%20298-Sistema%20de%20Informes-orange?style=for-the-badge)
+![Banner](https://img.shields.io/badge/Sistema%20de%20Informes-orange?style=for-the-badge)
 
 ## 🎯 ¿Qué es esto?
 
@@ -36,10 +36,6 @@ git clone https://github.com/tu-usuario/ipem298-informes.git
 # Abrir index.html en tu navegador
 # O súbelo a tu servidor web
 ```
-
-## 📷 Vista previa
-
-![Vista previa](https://via.placeholder.com/800x400?text=Vista+Previa+IPEM+298)
 
 ## 🔄 Datos
 
